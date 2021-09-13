@@ -15,12 +15,12 @@ $ npm test
 
 publish your framework to npm, then change app's framework config:
 
-```js
-// {app_root}/index.js
+```json
+// {app_root}/package.json
 {
-  "name": "egg-showcase",
+  "name": "your project name",
   "egg": {
-    "framework": "yadan"
+    "framework": "joyu-egg-framework"
   }
 }
 ```

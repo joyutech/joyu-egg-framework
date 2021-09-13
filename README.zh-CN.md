@@ -15,12 +15,12 @@ $ npm test
 
 将您的框架发布到 npm，然后更改应用程序的框架配置：
 
-```js
-// {app_root}/index.js
+```json
+// {app_root}/package.json
 {
-  "name": "egg-showcase",
+  "name": "your project name",
   "egg": {
-    "framework": "yadan"
+    "framework": "joyu-egg-framework"
   }
 }
 ```
