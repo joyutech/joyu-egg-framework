@@ -1,16 +1,17 @@
+/* eslint valid-jsdoc: "off" */
+
 'use strict';
 
+/**
+ * @param {Egg.EggAppInfo} appInfo app info
+ */
 module.exports = appInfo => {
-  const config = {};
 
   /**
-   * some description
-   * @member Config#test
-   * @property {String} key - some description
-   */
-  config.test = {
-    key: appInfo.name + '_123456',
-  };
+   * built-in config
+   * @type {Egg.EggAppConfig}
+   **/
+   const config = exports = {};
 
   return config;
 };

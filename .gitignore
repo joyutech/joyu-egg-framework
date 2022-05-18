@@ -8,4 +8,5 @@ run/
 .history
 *.swp
 package-lock.json
-
+.svn
+.github
