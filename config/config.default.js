@@ -11,7 +11,9 @@ module.exports = appInfo => {
    * built-in config
    * @type {Egg.EggAppConfig}
    **/
-   const config = exports = {};
+  const config = {
+    scope: appInfo.scope,
+  };
 
   return config;
 };
