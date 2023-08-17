@@ -1,14 +1,14 @@
 {
   "name": "joyu-egg-framework",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "joyu-egg base integration framework",
   "author": "joyu team",
   "ci": {
-    "version": "12",
+    "version": "16, 18",
     "type": "github"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=16.0.0"
   },
   "scripts": {
     "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
@@ -20,16 +20,16 @@
     "pkgfiles": "egg-bin pkgfiles"
   },
   "dependencies": {
-    "egg": "^2"
+    "egg": "^3"
   },
   "devDependencies": {
     "autod": "^3",
     "autod-egg": "^1",
-    "egg-bin": "^4",
-    "egg-ci": "^1",
-    "egg-mock": "^4",
-    "eslint": "^7",
-    "eslint-config-egg": "^8.0.0"
+    "egg-bin": "^5",
+    "egg-ci": "^2",
+    "egg-mock": "^5",
+    "eslint": "^8",
+    "eslint-config-egg": "^12"
   },
   "repository": {
     "type": "git",

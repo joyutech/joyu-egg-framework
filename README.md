@@ -25,6 +25,16 @@ publish your framework to npm, then change app's framework config:
 }
 ```
 
+```js
+// {app_root}/index.js
+{
+  "name": "your project name",
+  "egg": {
+    "framework": "joyu-egg-framework"
+  }
+}
+```
+
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/eggjs/egg/issues).
