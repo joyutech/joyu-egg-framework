@@ -15,5 +15,22 @@ module.exports = appInfo => {
     scope: appInfo.scope,
   };
 
+  config.security = {
+    // 关于csrf攻击的原理参看该文章：https://www.cnblogs.com/wangyuyu/p/3388169.html
+    csrf: {
+      enable: true,
+    },
+    domainWhiteList: [ '*' ],
+  };
+
+  config.cors = {
+    enable: true,
+    // 一定要配置，不然跨域请求时OPTIONS无法正确回应
+    credentials: true,
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
+    // origin不配置或配置为空就会使用security.domainWhiteList的配置
+    origin: '',
+  };
+
   return config;
 };
