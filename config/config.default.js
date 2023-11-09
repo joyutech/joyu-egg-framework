@@ -37,7 +37,7 @@ module.exports = appInfo => {
   config.logger = {
     // 业务日志 (app-web.log、egg-core.log、egg-agent.log、common-error.log)
     level: 'WARN',
-    consoleLevel: 'WARN',
+    consoleLevel: 'NONE',
     dir: path.join(appInfo.baseDir, 'logs'),
     appLogName: 'app-web.log',
     coreLogName: 'egg-core.log',
@@ -48,6 +48,15 @@ module.exports = appInfo => {
     },
     contextFormatter: function(meta) {
       return `[${meta.date}][${meta.level}] ${meta.message}`;
+    },
+  };
+
+  config.customLogger = {
+    // 定时任务日志 (egg-schedule.log)
+    scheduleLogger: {
+      level: 'WARN',
+      consoleLevel: 'NONE',
+      file: path.join(appInfo.baseDir, 'logs', 'egg-schedule.log'),
     },
   };
 

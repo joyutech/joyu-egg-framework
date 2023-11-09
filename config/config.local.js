@@ -14,9 +14,15 @@ module.exports = appInfo => {
    const config = exports = {};
 
   config.logger = {
-    // 业务日志（app-web.log、egg-web.log、egg-agent.log、common-error.log）
     level: 'DEBUG',
     consoleLevel: 'DEBUG',
+  };
+
+  config.customLogger = {
+    scheduleLogger: {
+      level: 'DEBUG',
+      consoleLevel: 'DEBUG',
+    },
   };
 
   return config;
