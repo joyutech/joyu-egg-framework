@@ -32,5 +32,22 @@ module.exports = appInfo => {
     origin: '',
   };
 
+  config.logger = {
+    // 业务日志 (app-web.log、egg-core.log、egg-agent.log、common-error.log)
+    level: 'WARN',
+    consoleLevel: 'WARN',
+    dir: path.join(appInfo.baseDir, 'logs'),
+    appLogName: 'app-web.log',
+    coreLogName: 'egg-core.log',
+    agentLogName: 'egg-agent.log',
+    errorLogName: 'common-error.log',
+    formatter: function(meta) {
+      return `[${meta.date}][${meta.level}] ${meta.message}`;
+    },
+    contextFormatter: function(meta) {
+      return `[${meta.date}][${meta.level}] ${meta.message}`;
+    },
+  };
+
   return config;
 };
