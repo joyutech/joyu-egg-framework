@@ -18,15 +18,21 @@ module.exports = {
     package: 'egg-router-plus',
   },
 
+  // jwt 插件
+  jwt: {
+    enable: true,
+    package: 'egg-jwt',
+  },
+
   // MySql 数据库查询构建器
   knex: {
-    enable: false,
+    enable: true,
     package: '@joyu/egg-knex',
   },
 
   // MongoDB ODM
   mongoose: {
-    enable: false,
+    enable: true,
     package: 'egg-mongoose',
   },
 
