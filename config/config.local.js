@@ -21,7 +21,7 @@ module.exports = appInfo => {
   config.customLogger = {
     scheduleLogger: {
       level: 'DEBUG',
-      consoleLevel: 'DEBUG',
+      consoleLevel: 'NONE',
     },
   };
 
