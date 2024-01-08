@@ -1,6 +1,6 @@
 {
   "name": "joyu-egg-framework",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "joyu-egg base integration framework",
   "author": "joyu team",
   "ci": {
@@ -20,7 +20,7 @@
     "pkgfiles": "egg-bin pkgfiles"
   },
   "dependencies": {
-    "@joyu/egg-knex": "^4.0.2",
+    "@joyu/egg-knex": "^4.0.3",
     "egg-cors": "^2.2.3",
     "egg-development-proxyagent": "^1.0.0",
     "egg-jwt": "^3.1.7",
