@@ -8,6 +8,5 @@ run/
 .DS_Store
 .history
 *.swp
-package-lock.json
 .svn
 .github
