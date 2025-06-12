@@ -22,7 +22,6 @@
   "dependencies": {
     "@joyu/egg-knex": "^5.0.0",
     "egg-cors": "^2.2.3",
-    "egg-development-proxyagent": "^1.0.0",
     "egg-jwt": "^3.1.7",
     "egg-mongoose": "^4.0.0",
     "egg-router-plus": "^2.0.0"
