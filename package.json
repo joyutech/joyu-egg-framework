@@ -43,6 +43,10 @@
     "type": "git",
     "url": "https://github.com/joyutech/joyu-egg-framework"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "keywords": [
     "egg",
     "egg-framework"
