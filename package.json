@@ -20,20 +20,21 @@
     "pkgfiles": "egg-bin pkgfiles"
   },
   "dependencies": {
+    "@eggjs/redis": "^3.1.0",
     "@joyu/egg-knex": "^5.0.0",
-    "egg-cors": "^2.2.3",
+    "egg-cors": "^3.0.1",
     "egg-jwt": "^3.1.7",
-    "egg-mongoose": "^4.0.0",
+    "egg-mongoose": "^4.0.1",
     "egg-router-plus": "^2.0.0"
   },
   "devDependencies": {
     "autod": "^3",
     "autod-egg": "^1",
-    "egg-bin": "^5",
+    "egg-bin": "^6",
     "egg-ci": "^2",
     "egg-mock": "^5",
-    "eslint": "^8",
-    "eslint-config-egg": "^12"
+    "eslint": "^9",
+    "eslint-config-egg": "^14"
   },
   "peerDependencies": {
     "egg": "^3"
