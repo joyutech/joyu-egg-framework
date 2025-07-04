@@ -18,6 +18,12 @@ module.exports = {
     package: 'egg-router-plus',
   },
 
+  // 参数校验插件
+  validate: {
+    enable: true,
+    package: 'egg-validate',
+  },
+
   // jwt 插件
   jwt: {
     enable: true,
@@ -34,6 +40,12 @@ module.exports = {
   mongoose: {
     enable: true,
     package: 'egg-mongoose',
+  },
+
+  // redis 插件
+  redis: {
+    enable: true,
+    package: '@eggjs/redis',
   },
 
 };
