@@ -76,5 +76,12 @@ module.exports = appInfo => {
     cache: true,
   };
 
+  // 由于 Koa 的 ctx.query 对象会将每个查询参数都设置为字符串值，为了避免 validate 的
+  // 严格验证导致报错，必须先将参数值转换为正确的类型再验证，所以要设 convert 为 true
+  // 参考: https://github.com/koajs/parameter/issues/12
+  config.validate = {
+    convert: true,
+  };
+
   return config;
 };
