@@ -60,5 +60,21 @@ module.exports = appInfo => {
     },
   };
 
+  // 静态资源配置，官方教程没有这个章节了
+  // 参考: https://www.jianshu.com/p/f1c7f3fa3998 和 https://www.jianshu.com/p/7e23f1c69279
+  config.static = {
+    // 静态化访问前缀，如：`http://127.0.0.1:7001/assets/images/logo.png`
+    prefix: '/assets',
+    // 静态化目录，可以设置多个静态化目录，`String` or `Array:[dir1, dir2, ...]`
+    dir: path.join(appInfo.baseDir, 'app/public'),
+  };
+
+  config.view = {
+    mapping: {
+      '.html': 'ejs',
+    },
+    cache: true,
+  };
+
   return config;
 };

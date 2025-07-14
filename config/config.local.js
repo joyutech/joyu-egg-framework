@@ -25,5 +25,9 @@ module.exports = appInfo => {
     },
   };
 
+  config.view = {
+    cache: false,
+  };
+
   return config;
 };
